@@ -4,8 +4,8 @@ import "./FigmaRewardStatus.css";
 type FigmaRewardStatusType = {
   title?: string;
   dateRange?: string;
-  text?: string;
-  text1?: string;
+  col1header?: string;
+  col2header?: string;
   text2?: string;
   text3?: string;
   text4?: string;
@@ -24,8 +24,8 @@ type FigmaRewardStatusType = {
 const FigmaRewardStatus: FunctionComponent<FigmaRewardStatusType> = ({
   title,
   dateRange,
-  text = "—",
-  text1 = "—",
+  col1header = "—",
+  col2header = "—",
   text2 = "—",
   text3 = "—",
   text4 = "—",
@@ -83,11 +83,11 @@ const FigmaRewardStatus: FunctionComponent<FigmaRewardStatusType> = ({
         <div className="col-header-div" />
         <img className="divider-icon1" alt="" src="../divider1.svg" />
         <div className="col-header-div1">
-          <p className="text-p">{text}</p>
+          <p className="text-p">{col1header}</p>
         </div>
         <img className="divider-icon1" alt="" src="../divider1.svg" />
         <div className="col-header-div1">
-          <p className="text-p">{text1}</p>
+          <p className="text-p">{col2header}</p>
         </div>
       </div>
       <div className="row-div2">
