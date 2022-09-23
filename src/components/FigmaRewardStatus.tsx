@@ -18,25 +18,27 @@ type FigmaRewardStatusType = {
   amount2?: string;
   cryptoPerp1?: string;
   amount3?: string;
+  text6?: string;
 };
 
 const FigmaRewardStatus: FunctionComponent<FigmaRewardStatusType> = ({
   title,
   dateRange,
-  text,
-  text1,
-  text2,
-  text3,
-  text4,
+  text = "—",
+  text1 = "—",
+  text2 = "—",
+  text3 = "—",
+  text4 = "—",
   cryptovePerp = "../cryptoveperp.svg",
-  amount,
-  cryptovePerp1,
-  amount1,
-  text5,
-  cryptoPerp,
-  amount2,
-  cryptoPerp1,
-  amount3,
+  amount = "—",
+  cryptovePerp1 = "../cryptoveperp.svg",
+  amount1 = "—",
+  text5 = "—",
+  cryptoPerp = "../cryptoperp.svg",
+  amount2 = "—",
+  cryptoPerp1 = "../cryptoperp.svg",
+  amount3 = "—",
+  text6 = "—",
 }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -90,7 +92,7 @@ const FigmaRewardStatus: FunctionComponent<FigmaRewardStatusType> = ({
       </div>
       <div className="row-div2">
         <div className="col-header-div3">
-          <p className="text-p">Header</p>
+          <p className="text-p">{text6}</p>
         </div>
         <img className="divider-icon1" alt="" src="../divider1.svg" />
         <div className="col-header-div1">
